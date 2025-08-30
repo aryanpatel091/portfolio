@@ -28,17 +28,25 @@
   </style>
 </head>
 <body>
-  <section class="contact">
-    <h2>Contact Me</h2>
-    <form action="#">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="4" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <p style="margin-top:1rem;">
-      Email: <a href="mailto:aryan@alvora.ai">aryan@alvora.ai</a> | <a href="mailto:hi@aryanpatel.site">hi@aryanpatel.site</a>
-    </p>
-  </section>
+  <<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  
+  <form action="https://formspree.io/f/xrbaqpbn" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+    
+    <!-- Optional: customize subject line -->
+    <input type="hidden" name="_subject" value="New Contact Form Submission from Portfolio Site">
+
+    <button type="submit">Send Message</button>
+  </form>
+  
+  <p style="margin-top:1rem;">
+    Email: <a href="mailto:aryan@alvora.ai">aryan@alvora.ai</a> | 
+           <a href="mailto:hi@aryanpatel.site">hi@aryanpatel.site</a>
+  </p>
+</section>
+
 </body>
 </html>
