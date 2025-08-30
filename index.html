@@ -4,7 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Aryan Patel | Data Analyst</title>
+  <title>Aryan Patel | Data Analyst in Prayagraj | Alvora AI</title>
+  <meta name="description" content="Aryan Patel is a Data Analyst based in Prayagraj, working at Alvora AI. Expert in data analysis, dashboards, and machine learning.">
+  <meta name="keywords" content="Aryan Patel, Data Analyst, Prayagraj, Alvora AI, Python, Power BI, SQL, Data Analysis">
+  <link rel="canonical" href="https://aryanpatel.site/">
+  <meta property="og:title" content="Aryan Patel | Data Analyst in Prayagraj | Alvora AI">
+  <meta property="og:description" content="Aryan Patel is a Data Analyst based in Prayagraj, working at Alvora AI. Expert in data analysis, dashboards, and machine learning.">
+  <meta property="og:image" content="https://aryanpatel.site/profile.jpg">
+  <meta property="og:image:alt" content="Aryan Patel Data Analyst Profile Photo">
+  <meta property="og:url" content="https://aryanpatel.site/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Aryan Patel | Data Analyst in Prayagraj | Alvora AI">
+  <meta name="twitter:description" content="Aryan Patel is a Data Analyst based in Prayagraj, working at Alvora AI. Expert in data analysis, dashboards, and machine learning.">
+  <meta name="twitter:image" content="https://aryanpatel.site/profile.jpg">
+  <meta name="twitter:image:alt" content="Aryan Patel Data Analyst Profile Photo">
+  <link rel="icon" href="aryan-patel-favicon.jpg" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     
@@ -254,6 +268,131 @@
         opacity: 1;
       }
     }
+
+    /* Responsive Styles */
+    @media (max-width: 900px) {
+      .skills .skill-cards,
+      .projects .project-cards {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 600px) {
+      header nav {
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+      }
+      .nav-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2.2rem;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: 0;
+        position: static;
+        background: transparent;
+        border-radius: 0.4rem;
+        padding: 0.2rem 0.7rem;
+        box-shadow: none;
+        z-index: 2;
+      }
+      header nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        width: 90vw;
+        max-width: 340px;
+        margin: 0 auto;
+        background: #fff;
+        color: #2b6cb0;
+        padding: 2.5rem 1.5rem 2rem 1.5rem;
+        border-radius: 1rem;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        position: fixed;
+        top: 2.8rem;
+        left: 50%;
+        transform: translateX(-50%) scale(0.95);
+        transition: opacity 0.3s, transform 0.3s;
+        opacity: 0;
+        z-index: 1001;
+      }
+      header nav ul.active {
+        display: flex;
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+      }
+      header nav ul li {
+        width: 100%;
+        text-align: center;
+      }
+      header nav ul li a {
+        color: #2b6cb0;
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 0.7rem 0;
+        border-radius: 0.5rem;
+        display: block;
+        transition: background 0.2s, color 0.2s;
+      }
+      header nav ul li a:hover {
+        background: #e3eaf6;
+        color: #3182ce;
+      }
+      .nav-close {
+        display: block;
+        position: absolute;
+        top: 0.7rem;
+        right: 1rem;
+        font-size: 2rem;
+        color: #2b6cb0;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 1003;
+      }
+      .logo h1 {
+        font-size: 1.5rem;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .about h2,
+      .skills h2,
+      .projects h2,
+      .contact h2 {
+        font-size: 1.7rem;
+      }
+      .hero {
+        padding: 2rem 1rem;
+      }
+      .about,
+      .skills,
+      .projects,
+      .contact {
+        padding: 2rem 1rem;
+      }
+      .skill-cards,
+      .project-cards {
+        grid-template-columns: 1fr;
+      }
+      .skills .card,
+      .projects .project-card {
+        padding: 1rem;
+      }
+      .contact form {
+        padding: 0 0.5rem;
+      }
+      footer {
+        padding: 1rem;
+      }
+      footer a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
   </style>
 </head>
 
@@ -265,26 +404,38 @@
       <div class="logo">
         <h1>Aryan Patel</h1>
       </div>
+      <button class="nav-toggle" aria-label="Open navigation">&#9776;</button>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <button class="nav-close" aria-label="Close navigation" style="display:none;">&times;</button>
+        <li><a href="about/">About</a></li>
+        <li><a href="skills/">Skills</a></li>
+        <li><a href="projects/">Projects</a></li>
+        <li><a href="services/">Services</a></li>
+        <li><a href="resume/">Resume</a></li>
+        <li><a href="aryan-patel-resume.pdf" target="_blank">Download Resume</a></li>
+        <li><a href="blogs/">Blogs</a></li>
+        <li><a href="contact/">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
+    <img src="aryan-patel.jpg" alt="Aryan Patel Data Analyst Profile Photo" style="width:160px;border-radius:50%;margin-bottom:2rem;">
     <h1>Hi, I'm Aryan Patel</h1>
-    <p>A passionate Data Analyst & Problem Solver</p>
+    <p>A passionate Data Analyst & Problem Solver at Alvora AI, Prayagraj</p>
     <a href="#projects" class="btn">See My Work</a>
+    <a href="aryan-patel-resume.pdf" class="btn" target="_blank" style="margin-left:1rem;">Download Resume</a>
   </section>
 
   <!-- About Section -->
   <section id="about" class="about">
     <h2>About Me</h2>
-    <p>I'm Aryan Patel, a Data Analyst based in [Location]. I specialize in transforming raw data into actionable insights, building interactive dashboards, and applying machine learning algorithms to solve real-world problems.</p>
+    <p>
+      I'm Aryan Patel, a Data Analyst based in Prayagraj, currently working at <a href="https://alvora.ai" target="_blank" rel="noopener">Alvora AI</a>.
+      I specialize in transforming raw data into actionable insights, building interactive dashboards, and applying machine learning algorithms to solve real-world problems.
+      My expertise includes Python, Power BI, SQL, and Excel for data analysis and visualization.
+    </p>
   </section>
 
   <!-- Skills Section -->
@@ -341,17 +492,79 @@
       <textarea placeholder="Your Message" rows="4" required></textarea>
       <button type="submit">Send Message</button>
     </form>
+    <p style="margin-top:1rem;">
+      Email: <a href="mailto:aryan@alvora.ai">aryan@alvora.ai</a> | <a href="mailto:hi@aryanpatel.site">hi@aryanpatel.site</a>
+    </p>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>© 2025 Aryan Patel. All Rights Reserved.</p>
     <div>
-      <a href="https://www.linkedin.com/in/aryan-patel-1439b8246/">LinkedIn</a>
-      <a href="https://github.com/aryanpatel091">GitHub</a>
-      <a href="mailto:aryanpp2004.com">Email</a>
+      <a href="https://www.linkedin.com/in/-aryan-patel-/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/aryanpatel091" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:aryan@alvora.ai">Email</a>
+      <a href="about/">About</a>
+      <a href="skills/">Skills</a>
+      <a href="projects/">Projects</a>
+      <a href="services/">Services</a>
+      <a href="resume/">Resume</a>
+      <a href="blogs/">Blogs</a>
+      <a href="testinomial/">Testimonials</a>
+      <a href="endorsement/">Endorsements</a>
+      <a href="contact/">Contact</a>
     </div>
   </footer>
 
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aryan Patel",
+    "jobTitle": "Data Analyst",
+    "image": "https://aryanpatel.site/profile.jpg",
+    "email": "aryan@alvora.ai",
+    "url": "https://aryanpatel.site/",
+    "sameAs": [
+      "https://www.linkedin.com/in/-aryan-patel-/",
+      "https://github.com/aryanpatel091"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Alvora AI",
+      "url": "https://alvora.ai"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Prayagraj",
+      "addressCountry": "India"
+    }
+  }
+  </script>
+
+  <!-- Add this before </body> -->
+  <script>
+    // Improved Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navUl = document.querySelector('header nav ul');
+    const navClose = document.querySelector('.nav-close');
+    function openNav() {
+      navUl.classList.add('active');
+      navClose.style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
+    function closeNav() {
+      navUl.classList.remove('active');
+      navClose.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+    navToggle.addEventListener('click', openNav);
+    navClose.addEventListener('click', closeNav);
+    // Close menu on link click (mobile)
+    navUl.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', closeNav);
+    });
+  </script>
 </body>
 </html>
